@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkout page</title>
+    <link rel="stylesheet" href="css/payment.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div class="payment">
+            <div class="payment_product">
+                <div>
+                    <h2>Butter Roasted Chicken</h2>
+                </div>
+            </div>
+            <div class="payment_bill">
+                <h3>Billing Address</h3>
+                <form class="bill_form">
+                    <input type="text" id="s1" placeholder="Full Name">
+                    <input type="email" id="s1" placeholder="Example@123">
+                    <input type="text" id="s2" placeholder="Address">
+                    <input type="text" id="s3" placeholder="City">
+                    <input type="text" id="s3" placeholder="state" >
+                    <input type="text" id="s3" placeholder="Pin Code">
+                    <input type="submit" id="btn1" value="Save">
+                </form>
+                <hr>
+                <h3>Payment Information</h3>
+                <form action="/" class="payment_form">
+                    <div class="form-input">
+                        <input type="text" placeholder="Card Number" style="width: 100%;">
+                    </div>
+                    <div class="form-input">
+                        <select>
+                            <option>Month</option>
+                        </select>
+                        <select>
+                            <option>Year</option>
+                        </select>
+                        <input type="text" placeholder="CVV" />
+                    </div>
+                    <button type="submit">Order Now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

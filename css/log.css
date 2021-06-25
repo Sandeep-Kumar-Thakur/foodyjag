@@ -1,0 +1,123 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: cursive;
+    box-sizing: border-box;
+    background: url(/img/bg2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.formWrapper{
+    display: flex;
+    width: 55%;
+    height: 500px;
+    background-color: yellowgreen;
+    margin-top: 60px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px black;
+}
+.formdiv{
+    width: 55%;
+    padding: 8%;
+    background-color: lavender;
+    text-align: center;
+    border-radius: 10px 0px 0px 10px;
+}
+.formdiv h2{
+    color: green;
+    margin-top: -10px;
+}
+.welcomediv{
+    width: 50%;
+    padding: 10px;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/Bengali1.jpg);
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+.welcomediv h1{
+    margin-top: 150px;
+}
+.socialbtn{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: teal;
+    margin: 5px;
+    line-height: 30px;
+    box-shadow: 0px 0px 10px black;
+}
+.text{
+    font-size: small;
+}
+.ordiv{
+    margin: -5px auto;
+    width: 10%;
+    background-color: lavender;
+    position: relative;
+    top: -16px;
+    justify-content: center;
+}
+.formgroup{
+    width: 100%;
+    position: relative;
+}
+.formgroup input{
+    width: 93%;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+.checkbox{
+    width: 100%;
+    margin-top: 2px;
+}
+.btn{
+    width: 70%;
+    padding: 15px;
+    background-color: green;
+    margin-top: 15px;
+    color: lavender;
+    border-radius: 20px;
+    border-style: none;
+    cursor: pointer;
+}
+.btn2{
+    width: 70%;
+    padding: 15px;
+    background-color: transparent;
+    margin-top: 15px;
+    color: lavender;
+    border-radius: 20px;
+    border-style: none;
+    cursor: pointer;
+    border: 3px solid rgb(157, 157, 160);
+}
+.btn:hover, .btn2:hover, .icon:hover{
+    background-color: rgb(153, 85, 85);
+}
+@media screen and (max-width: 1000px) {
+    .formWrapper{
+        width: 70%;
+    }
+    
+}
+@media screen and (max-width: 600px) {
+    .formdiv{
+        width: 80%;
+        border-radius: 10px 10px 10px 10px;
+    }
+    .welcomediv{
+        display: none;
+    }
+    
+}

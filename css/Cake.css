@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+    scroll-behavior: smooth;
+}
+p{
+    font-weight: 300;
+    color: #111;
+}
+body{
+    min-height: 700px;
+}
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/bg.jpg);
+    background-size: cover;
+}
+.banner .content{
+    max-width: 900px;
+    text-align: center;
+}
+.banner .content h2{
+    font-size: 5em;
+    color: #fff;
+}
+.banner .content p{
+    font-size: 1em;
+    color: #fff;
+}
+.btn{
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+.btn:hover{
+    letter-spacing: 5px;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(224, 203, 203);
+    padding: 30px 100px;
+    z-index: 10000;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    transition: 0.5s;
+}
+header .logo{
+    color: rgb(15, 14, 14);
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+header .logo span{
+    color: #ff0157;
+}
+header .navigation{
+    position: relative;
+    display: flex;
+
+}
+header .navigation li{
+    list-style: none;
+    margin-left: 40px;
+}
+header .navigation li a{
+    text-decoration: none;
+    color: rgb(20, 19, 19);
+    font-size: 1.2em;
+    
+}
+header .navigation li a:hover{
+    color: #ff0157;
+}
+section{
+    padding: 60px;
+}
+.tittle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ flex-direction: column;
+}
+.tittle-txt{
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+}
+.tittle-txt span{
+    color: #ff0157;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+.menu .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.menu .content .box{
+    width: 200px;
+    margin: 10px;
+    border: 10px solid #fff;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.8); 
+}
+.menu .content .box .imgbox{
+    position: relative;
+    width: 100%;
+    height: 150px;
+}
+.menu .content .box .imgbox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.menu .content .box .text{
+    padding: 15px 0 5px;
+}
+.menu .content .box .text h3{
+    font-weight: 400;
+    color: #111;
+}
+footer{
+    width: 100%;
+    height: 450px;
+    bottom: 0;
+    background: sandybrown;
+}
+.footer-full{
+    display: flex;
+    width: 100%;
+    padding: 25px;
+    background: rgb(7, 2, 22);
+    height: 100%;
+}
+.footer-full .footer-first{
+    width: 25%;
+    margin-left: 15px;
+    text-align: center;
+}
+.footer-full .footer-first h3{
+        margin-bottom: 15px;
+        font-size: 1.5em;
+        color: #fff;
+    
+
+}
+.footer-full .footer-first p{
+    margin-top: 5px;
+    font-size: 1em;
+    color: #fff;
+    margin-right: 15px;
+}
+.footer-full .footer-first img{
+    margin-top: 30px;
+    margin-left: 15px;
+    width: 30px;
+    height: 48px;
+
+}.footer-full .footer-second{
+    width: 25%;
+    margin-left: 15px;
+    text-align: center;
+
+}
+.footer-full .footer-second h3{
+        margin-bottom: 15px;
+        font-size: 1.5em;
+        color: #fff;
+    
+
+}.footer-full .footer-second ul{
+    list-style: none;
+}
+.footer-full .footer-second ul li{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 1em;
+    
+}.footer-full .footer-second ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.footer-full .footer-third{
+    text-align: center;
+    width: 25%;
+    margin-left: 15px;
+
+}
+.footer-full .footer-third h3{
+        margin-bottom: 15px;
+        font-size: 1.5em;
+        color: #fff;
+    
+
+}.footer-full .footer-third ul{
+    list-style: none;
+}
+.footer-full .footer-third ul li{
+    margin-top: 10px;
+    font-size: 1em;
+
+}
+.footer-full .footer-third ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.footer-full .footer-forth{
+    width: 25%;
+    margin-left: 15px;
+    text-align: center;
+}
+.footer-full .footer-forth h3{
+        margin-bottom: 15px;
+        font-size: 1.5em;
+        color: #fff;
+    
+
+}
+#map{
+    margin-top: 10px;
+    height: 250px;
+}
