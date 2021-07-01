@@ -1,5 +1,5 @@
 window.addEventListener( 'load',() =>{
-    const iterm1 = "Rs.100"
+    const iterm1 = "Rs.1000"
     const iterm2 = "Rs.150"
     const iterm3 = "Rs.180"
     const iterm4 = "Rs.210"
