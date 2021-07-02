@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fresh Meal</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <a href="#" class="logo">Fresh <span>M</span>eal</a>
+        <div class="menuToggle" onclick="togglemenu();"></div>
         <ul class="navigation">
             <li><a href="#banner">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -22,9 +24,7 @@
     <section class="banner" id="banner">
         <div class="content">
             <h2>Always Choose Good</h2>
-            <p>User authentication is a security process that covers all of the human-to-computer interactions 
-                that require the user to register and log in. Said more simply, authentication asks each user, 
-                “Who are you?” and verifies their response.</p>
+            <p>Fresh Meal has grand plans to be India’s most loved hyper local player, It aims to be the most accessible platform on the network - hyperlocal, horizontal and across categories.</p>
                 <a href="Menu page.html" class="btn">Our Menu</a>
 
         </div>
@@ -219,6 +219,59 @@
                </div>
         </div>
     </section> 
+    <section class="swiper" id="swiper">
+        <div class="tittle">
+            <h2 class="tittle-txt">Our <span>Team</span> Members</h2>
+            <p>Factors the user must know in order to log in are considered a 
+                knowledge factor.</p>
+        </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="members/IMG-20210613-WA0002.jpg">
+                    <div class="details">
+                        <h3>Shivji Kushwaha <br><span>Developer</span></h3>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="members/IMG-20210614-WA0001.jpg">
+                    <div class="details">
+                        <h3>Sandeep Thakur <br><span>Developer</span></h3>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="members/IMG-20210626-WA0014.jpg">
+                    <div class="details">
+                        <h3>Shubham Shukla<br><span>Developer</span></h3>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="members/IMG-20210627-WA0009.jpg">
+                    <div class="details">
+                        <h3>Shikhar Thakur <br><span>Developer</span></h3>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="members/IMG20210410121815.jpg">
+                    <div class="details">
+                        <h3>Sandeep Kumar <br><span>Developer</span></h3>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="members/IMG_20200209_191652_838.jpg">
+                    <div class="details">
+                        <h3>Saurav Thakur<br><span>Developer</span></h3>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/menu6.jpg">
+                    <div class="details">
+                        <h3>Shreya<br><span>Developer</span></h3>
+                      </div>
+                  </div>
+            </div>
+            
+    </section>
     <footer>
         <div class="footer-full">
             <div class="footer-first">
@@ -241,7 +294,7 @@
                     <li><a href="#">About us</a></li>
                     <li><a href="#">Products</a></li>
                     <li><a href="#">Services</a></li>
-                    <li><a href="#">Gallary</a></li>
+                    <li><a href="third page.html">Gallary</a></li>
                     <li><a href="#">Contact us</a></li>
                     <li><a href="#">security</a></li>
 
@@ -267,5 +320,33 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript">
+        var swiper = new Swiper(".swiper-container", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 30,
+            stretch: 0,
+            depth: 200,
+            modifier: 1,
+            slideShadows: true,
+          },
+         loop: true,
+         autoplay: {
+             delay: 1000,
+             disableOnInteraction: false,
+         }
+        });
+
+        function togglemenu() {
+            const menuToggle = document.querySelector('.menuToggle');
+            const navigation = document.querySelector('.navigation');
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+      </script>
 </body>
 </html>
